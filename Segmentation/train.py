@@ -3,6 +3,7 @@ from utils.dataset import ISBI_Loader
 from torch import optim
 import torch.nn as nn
 import torch
+import torch.utils.data
 
 def train_net(net, device, data_path, epochs=40, batch_size=1, lr=0.00001):
     # 加载训练集
