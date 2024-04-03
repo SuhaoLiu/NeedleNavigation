@@ -5,7 +5,7 @@ import torch.nn as nn
 import torch
 import torch.utils.data
 
-def train_net(net, device, data_path, epochs=40, batch_size=1, lr=0.00001):
+def train_net(net, device, data_path, epochs=40, batch_size=16, lr=0.00001):
     # 加载训练集
     isbi_dataset = ISBI_Loader(data_path)
     train_loader = torch.utils.data.DataLoader(dataset=isbi_dataset,
